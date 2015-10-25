@@ -1,3 +1,27 @@
+#How to use ?
+
+
+1. Capture the image through Camera:
+
+     startActivityForResult(new Intent(this, ImageCaptureActivity.class), 100);
+
+2. Similar to Gallery, picking the image from the gallery
+
+     startActivityForResult(new Intent(this, GalleryActivity.class), 102);
+
+3. File browser/picker:
+
+startActivityForResult(new Intent(this, FilePickerActivity.class), 101);
+
+Note: The above 3 methods will return the path with in intent using below key:
+
+public static final String IMAGE_PATH = "image_path";
+
+
+
+
+
+
 File format icons:
 ==================
 https://www.iconfinder.com/icons/709492/document_documents_file_files_folder_open_opened_icon#size=128
@@ -12,3 +36,8 @@ Need Improvements:
 2. Gallery View and Gallery picker
    https://github.com/rameshakulapc/MultiImagePicker
 
+3. Provide the options in navigation drawer
+
+4. File browser for images only
+
+5. Publish to bintray
